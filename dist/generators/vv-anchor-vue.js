@@ -1,5 +1,7 @@
+"use strict";
 // ./src/generators/vv-anchor-vue.ts
-export default function (options) {
+Object.defineProperty(exports, "__esModule", { value: true });
+function default_1(options) {
     return `<!-- ${options.filePathComment} -->
 
 <script lang="ts">
@@ -91,4 +93,5 @@ export default function (options) {
 </template>
 `;
 }
+exports.default = default_1;
 //# sourceMappingURL=vv-anchor-vue.js.map
