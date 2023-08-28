@@ -1,6 +1,6 @@
 {
   "name": "@obewds/puff-js",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "The official repository for Puff.js, a Node.js and Typescript Library for OBE:WDS Design System packages.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
