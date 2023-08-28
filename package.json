@@ -1,0 +1,19 @@
+{
+  "name": "@obewds/puff-js",
+  "version": "0.1.0",
+  "description": "The official repository for Puff.js, a Node.js &amp; Typescript Library for OBE:WDS Design System packages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obewds/puff-js.git"
+  },
+  "author": "Matt McT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obewds/puff-js/issues"
+  },
+  "homepage": "https://github.com/obewds/puff-js#readme"
+}
