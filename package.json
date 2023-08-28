@@ -23,9 +23,9 @@
     "pkg:org": "npm config set scope obewds",
     "tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
     "make-entrypoint": "node build/makeEntryPoints.mjs",
-    "bump:patch": "npm version patch && npm run build && make-entrypoint",
-    "bump:minor": "npm version minor && npm run build && make-entrypoint",
-    "bump:major": "npm version major && npm run build && make-entrypoint"
+    "bump:patch": "npm version patch && npm run build && npm run make-entrypoint",
+    "bump:minor": "npm version minor && npm run build && npm run make-entrypoint",
+    "bump:major": "npm version major && npm run build && npm run make-entrypoint"
   },
   "repository": {
     "type": "git",
