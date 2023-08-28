@@ -1,19 +1,13 @@
 {
   "name": "@obewds/puff-js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The official repository for Puff.js, a Node.js and Typescript Library for OBE:WDS Design System packages.",
-  "main": "./dist/index.mjs",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    },
-    "./dist/*": "./dist/*"
-  },
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "npx rimraf dist && tsc",
@@ -23,9 +17,9 @@
     "pkg:org": "npm config set scope obewds",
     "tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
     "make-entrypoint": "node build/makeEntryPoints.mjs",
-    "bump:patch": "npm version patch && npm run build && npm run make-entrypoint",
-    "bump:minor": "npm version minor && npm run build && npm run make-entrypoint",
-    "bump:major": "npm version major && npm run build && npm run make-entrypoint"
+    "bump:patch": "npm version patch && npm run build",
+    "bump:minor": "npm version minor && npm run build",
+    "bump:major": "npm version major && npm run build"
   },
   "repository": {
     "type": "git",
