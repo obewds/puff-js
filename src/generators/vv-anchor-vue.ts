@@ -1,11 +1,11 @@
 // ./src/generators/vv-anchor-vue.ts
 
-export interface GenerateVvAnchorVue {
+export interface GenerateVvAnchorVueOptions {
     filePathComment: string
     appVvFilePath: string
 }
 
-export default function (options:GenerateVvAnchorVue): string {
+export default function (options:GenerateVvAnchorVueOptions): string {
 
 return `<!-- ${options.filePathComment} -->
 
