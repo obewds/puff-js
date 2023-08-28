@@ -12,14 +12,20 @@ describe('./src/generators/vv-anchor-vue module', () => {
 
     })
 
-    test('module default value is a valid string', () => {
+    test('module default value is a valid string, and returns a value with the expected options argument strings within it', () => {
 
-        const value = vvAnchorVue({
+        const opts = {
             filePathComment: './test/comment/filepath.string',
             appVvFilePath: './test/app.vv.ts',
-        })
+        }
 
-        expect(typeof value === 'string').toBe(true)
+        const result = vvAnchorVue(opts)
+
+        expect(typeof result === 'string').toBe(true)
+
+        expect(result).toContain(opts.filePathComment)
+
+        expect(result).toContain(opts.appVvFilePath)
 
     })
 
