@@ -44,7 +44,7 @@
     "nodejs"
   ],
   "devDependencies": {
-    "@jest/globals": "^29.6.4",
+    "@jest/globals": "^29.7.0",
     "@types/fs-extra": "^11.0.1",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.7",
