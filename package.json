@@ -10,8 +10,7 @@
     "src"
   ],
   "scripts": {
-    "cli-mjs": "node scripts/generateCliMjsVersions.mjs",
-    "build": "npx rimraf dist && tsc && npm run cli-mjs",
+    "build": "npx rimraf dist && tsc",
     "test": "jest",
     "coverage": "jest --coverage",
     "test:watch": "jest --watch",
